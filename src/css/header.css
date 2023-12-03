@@ -1,0 +1,202 @@
+@font-face {
+    font-family: Motiva Sans;
+    src: url(../resource/MotivaSansThin.ttf);
+}
+
+@keyframes fadeIn {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+}
+
+* {
+    color: white;
+}
+
+.header_container {
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 80%;
+}
+
+#avatar_container {
+    position: relative;
+    width: 20%;
+    height: 100%;
+}
+
+#avatar_frame {
+    position: absolute;
+}
+
+#avatar_image {
+    position: absolute;
+}
+
+#info {
+    position: relative;
+    width: 48%;
+    height: 100%;
+    overflow: visible;
+    padding-right: 5%;
+}
+
+#name_container {
+    position: relative;
+    top: 6%;
+    width: 100%;
+}
+
+#name {
+    top: 10%;
+    display: inline;
+    font-size: 28px;
+    font-family: Motiva Sans, sans-serif;
+}
+
+#alias_button {
+    background-color: transparent;
+    border: none;
+}
+
+#alias {
+    visibility: visible;
+    background-color: rgb(100, 100, 100);
+    position: absolute;
+    top: 20%;
+    left: 58%;
+    width: 48%;
+    padding: 1%;
+    box-shadow: 0px 0px 12px black ;
+    animation: fadeIn 200ms;
+    z-index: 1;
+}
+
+#has_also {
+    padding: 0%;
+    margin: 0%;
+}
+
+#alias_name {
+    padding-left: 8%;
+    margin: 0%;
+}
+
+#country_container {
+    display: flex;
+    align-items: center;
+    width: fit-content;
+    padding-top: 1%;
+}
+
+#country_pic {
+    padding: 1%;
+}
+
+#country {
+    margin-left: 5%;
+    padding: 0%;
+}
+
+#description {
+    margin-top: 5%;
+}
+
+#age_container {
+    display: flex;
+    width: fit-content;
+    align-items: center;
+    margin-top: 5%;
+}
+
+#age {
+    height: fit-content;
+    font-size: 26px;
+    font-family: Motiva Sans, sans-serif;
+}
+
+#age_num {
+    margin-left: 10%;
+    padding: 6.5%;
+    border-radius: 50%;
+    border-color: rgb(192, 41, 66);
+    border-style: solid;
+    font-size: 18px;
+    font-family: Motiva Sans, sans-serif;
+}
+
+#badge_container {
+    display: inline-flex;
+    background-color: rgba(0, 0, 0, 0.2);
+    padding: 4%;
+    margin-top: 5%;
+    width: 90%;
+    height: 30%;
+    border-radius: 0.3vw;
+}
+
+#mg_container {
+    display: block;
+    margin-top: 2%;
+}
+
+#github_button {
+    font-size: 95%;
+    background-color: rgba(0, 0, 0, 0.2);
+    border: none;
+    padding: 4%;
+    border-radius: 0.3vw;
+    margin-right: 2%;
+}
+
+#github_button:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+#message_button {
+    font-size: 95%;
+    background-color: rgba(0, 0, 0, 0.2);
+    border: none;
+    padding: 4%;
+    border-radius: 0.3vw;
+    margin-right: 2%;
+}
+
+#message_button:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+#message_button:hover + .container {
+    display: block;
+    position: absolute;
+    margin-top: 2%;
+}
+
+#badge_img {
+    margin-right: 5%;
+    width: 21%;
+}
+
+#badge_text_container {
+    position: absolute;
+    margin-left: 25%;
+    width: 50%;
+}
+
+.badge_text {
+    font-size: 16px;
+    margin: 0;
+    padding-top: 4%;
+}
+
+#levelbadge {
+    position: relative;
+    width: 25%;
+}
