@@ -2,25 +2,25 @@ import "./css/projectshowcase.css";
 
 function Tech(prop) {
     return (
-        <div class="tech_container" style={{backgroundColor: prop.color}}>
-            <p class="tech_name">{prop.name}</p>
+        <div className="tech_container" style={{backgroundColor: prop.color}}>
+            <p className="tech_name">{prop.name}</p>
         </div>
     );
 }
 
-function Project1() {
+function Project1(prop) {
     return (
-        <div class="project_container">
-            <img class="project_image" src={require('./resource/steam_achievement.png')} alt=""></img>
-            <div class="techstack_container">
+        <div className={prop.mobile ? "m_project_container" : "project_container"}>
+            <img className="project_image" src={require('./resource/steam_achievement.png')} alt=""></img>
+            <div className="techstack_container">
                 <Tech name="Android" color="#32DE84"/>
                 <Tech name="Kotlin" color="#8051FF"/>
                 <Tech name="Jetpack Compose" color="#4285F4"/>
                 <Tech name="SQLite" color="#004562"/>
             </div>
-            <div class="desc_container">
-                <a class="p_title" href="https://github.com/MinhMXC/SteamAchievementApp/tree/master" target="_blank">Steam Achievement Manager</a>
-                <p class="p_desc">
+            <div className="desc_container">
+                <a className="p_title" href="https://github.com/MinhMXC/SteamAchievementApp/tree/master" target="_blank">Steam Achievement Manager</a>
+                <p className="p_desc">
                     An Android app to track Steam game achievements for Achievement Hunters, 
                     including guide integration with TrueAchievement and Playstation Trophies.
                 </p>
@@ -29,21 +29,14 @@ function Project1() {
     );
 }
 
-function Project2() {
+function Project2(prop) {
     return (
-        <div class="project_container">
-            <div class="placeholder">
-                <img class="project_image" src={require('./resource/steam_achievement.png')} alt=""></img>
-                <div class="techstack_container">
-                    <Tech name="Android" color="#32DE84"/>
-                    <Tech name="Kotlin" color="#A97BFF"/>
-                    <Tech name="Jetpack Compose" color="#4285F4"/>
-                    <Tech name="SQLite" color="#004562"/>
-                </div>
+        <div className={prop.mobile ? "m_project_container" : "project_container"} style={{marginTop: prop.mobile ? "2%" : "0"}}>
+            <div className="techstack_container">
             </div>
-            <div class="desc_container">
-                <p class="p_title">Coming Soon</p>
-                <p class="p_desc">
+            <div className="desc_container">
+                <p className="p_title">Coming Soon</p>
+                <p className="p_desc">
                     Coming Soon.
                 </p>
             </div>
@@ -51,15 +44,15 @@ function Project2() {
     );
 }
 
-export default function ProjectShowcase() {
+export default function ProjectShowcase(prop) {
     return (
-        <div class="showcase_container">
-            <div class="title_container">
-                <p class="s_title">Personal Projects Showcase</p>
+        <div className="showcase_container">
+            <div className="title_container">
+                <p className="s_title">Personal Projects Showcase</p>
             </div>
-            <div class="showcase_body_container">
-                <Project1 />
-                <Project2 />
+            <div className="showcase_body_container" style={{display: prop.mobile ? "block" : "flex"}}>
+                <Project1 {...prop}/>
+                <Project2 {...prop}/>
             </div>
         </div>
     );

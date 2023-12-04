@@ -13,7 +13,7 @@ function useWindowSize() {
     const [size, setSize] = useState([0, 0]);
     useLayoutEffect(() => {
       function updateSize() {
-        setSize([window.innerWidth, window.innerHeight]);
+        setSize([document.body.clientWidth, window.innerHeight]);
       }
       window.addEventListener('resize', updateSize);
       updateSize();
@@ -24,16 +24,25 @@ function useWindowSize() {
 
 export default function MainColumn() {
     let [width, height] = useWindowSize();
-    if (width > WIDTH * COL_SIZE) {
-        width = WIDTH * COL_SIZE;
+    let mobile = width < WIDTH * 0.28;
+
+    let desktop_width = WIDTH * 0.35;
+    if (width < WIDTH * COL_SIZE) {
+        desktop_width = width
+    }
+
+    let prop = {
+        mobile: mobile,
+        width: width,
+        height: height,
     }
 
     return (
-        <div class="main_col" style={{width: width, padding: width / 90}}>
-            <Header />
-            <ProjectShowcase />
-            <FunShowcase />
-            <LangShowcase />
+        <div className="main_col" style={{width: mobile ? "100%" : desktop_width}}>
+            <Header {...prop}/>
+            <ProjectShowcase {...prop}/>
+            <FunShowcase {...prop}/>
+            <LangShowcase {...prop}/>
         </div>
     );
 }

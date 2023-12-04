@@ -5,7 +5,18 @@
     margin-top: 2%;
     padding: 1%;
     background-color: rgba(0, 0, 0, 0.2);
-    border-radius: 0.3vw;
+    border-radius: 6px;
+}
+
+.m_l_showcase_body_container {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    margin: 1%;
+    margin-top: 2%;
+    padding: 1%;
+    padding-top: 4.5%;
+    background-color: rgba(0, 0, 0, 0.2);
+    border-radius:  6px;
 }
 
 .lang_container {

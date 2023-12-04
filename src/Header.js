@@ -39,39 +39,39 @@ function Alias() {
     );
 }
 
-function AvatarPicture() {
-    const img_w = WIDTH / 18;
-    const frame_w = WIDTH / 15;
-    const avatar_pad = WIDTH / 175;
+function AvatarPicture(prop) {
+    const img_w = prop.mobile ? prop.width / 3 : WIDTH / 18;
+    const frame_w = img_w * 1.2;
+    const avatar_pad = img_w * 0.1;
+    const id_main_container = prop.mobile ? "m_avatar_container" : "avatar_container";
 
     let [left, top, right, bottom] = GetElementLocation("avatar_frame");
-    let [l, t, r, b] = GetElementLocation("avatar_container");
-
+    let [l, t, r, b] = GetElementLocation(id_main_container);
 
     return (
-        <div id="avatar_container">
-            <img src={require('./resource/avatar.png')} alt="" id="avatar_image" width={img_w} height={img_w} style={{top: top - t + avatar_pad, left: left - l + avatar_pad}}></img>
+        <div id={id_main_container}>
             <img id="avatar_frame" src={require('./resource/avatar_frame.png')} alt="" width={frame_w} height={frame_w}></img>
+            <img src={require('./resource/avatar.png')} alt="" id="avatar_image" width={img_w} height={img_w} style={{top: top - t + avatar_pad, left: left - l + avatar_pad}}></img>
         </div>
     );
 }
 
 //NAME + DESCRIPTION 
 
-function Country() {
-    const img_w = WIDTH / 120;
+function Country(prop) {
+    const img_w = prop.mobile ? prop.width / 25 : WIDTH / 120;
 
     return (
         <div id="country_container">
             <img src={require('./resource/sg_flag.png')} alt="" width={img_w} id="country_pic"></img>
-            <text id="country">Singapore</text>
+            <p id="country">Singapore</p>
         </div>
     );
 }
 
-function Description() {
+function Description(prop) {
     return (
-        <div id="description">
+        <div id={prop.mobile ? "m_description" : "description"}>
             <p>Hello, I'm currently a Year 1 Computer Science student at the National University of Singapore.</p>
             <p>Welcome to my website \ (•◡•) /.</p>
         </div>
@@ -103,12 +103,12 @@ function Info() {
 function MessageGithubButton() {
     return (
         <div id="mg_container">
-            <button id="message_button" type="button" onClick={() => window.location.href='https://mail.google.com/mail/u/0/?to=minhmxc.imp@gmail.com&fs=1&tf=cm'}>Message</button>
-            <div id="gmail" class="container">
-                <p class="text">Gmail: minhmxc.imp@gmail.com</p>
+            <button className="header_button" id="message_button" type="button" onClick={() => window.location.href='https://mail.google.com/mail/u/0/?to=minhmxc.imp@gmail.com&fs=1&tf=cm'}>Message</button>
+            <div id="gmail" className="container">
+                <p className="text">Gmail: minhmxc.imp@gmail.com</p>
             </div>
-            <button id="github_button" type="button" onClick={() => window.location.href='https://github.com/MinhMXC'}>Github</button>
-            <button id="github_button" type="button" onClick={() => window.location.href=cv}>CV</button>
+            <button className="header_button" type="button" onClick={() => window.location.href='https://github.com/MinhMXC'}>Github</button>
+            <button className="header_button" type="button" onClick={() => window.location.href=cv}>CV</button>
         </div>
     );
 }
@@ -116,8 +116,8 @@ function MessageGithubButton() {
 function Level() {
     return (
         <div id="age_container">
-            <text id="age">Age</text>
-            <text id="age_num">19</text>
+            <p id="age">Age</p>
+            <p id="age_num">19</p>
         </div>
     );
 }
@@ -127,16 +127,16 @@ function Badge() {
         <div id="badge_container">
             <ImageHoverText src="./resource/C_language_badge.png" title="Ceer" text="Know All The C Languages"/>
             <div id="badge_text_container">
-                <p class="badge_text">Ceer</p>
-                <p class="badge_text">500 XP</p>
+                <p className="badge_text">Ceer</p>
+                <p className="badge_text">500 XP</p>
             </div>
         </div>
     );
 }
 
-function LevelBadge() {
+function LevelBadge(prop) {
     return (
-        <div id="levelbadge">
+        <div id={prop.mobile ? "m_levelbadge" : "levelbadge"}>
             <Level />
             <Badge />
             <MessageGithubButton />
@@ -144,14 +144,34 @@ function LevelBadge() {
     );
 }
 
-export default function Header() {
+function M_Header(prop) {
     return (
-        <div class="header_container" style={{height: HEIGHT / 7}}>
-            <div class="header">
+        <div id="m_header">
+            <div id="m_name_country">
+                <p id="name">Nguyen Quang Minh</p>
+                <Country {...prop}/>
+            </div>
+            <div id="avatar_levelbadge_container">
+                <AvatarPicture {...prop}/>
+                <LevelBadge {...prop}/>
+            </div>
+            <Description {...prop}/>
+        </div>
+    );
+}
+
+function D_Header() {
+    return (
+        <div className="header_container" style={{height: HEIGHT / 7}}>
+            <div className="header">
                 <AvatarPicture />
                 <Info />
                 <LevelBadge />
             </div>
         </div>
     );
+}
+
+export default function Header(prop) {
+    return prop.mobile ? M_Header(prop) : D_Header();
 }
