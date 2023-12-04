@@ -122,10 +122,10 @@ function Level() {
     );
 }
 
-function Badge() {
+function Badge(prop) {
     return (
-        <div id="badge_container">
-            <ImageHoverText src="./resource/C_language_badge.png" title="Ceer" text="Know All The C Languages"/>
+        <div id={prop.mobile ? "m_badge_container" : "badge_container"}>
+            <ImageHoverText src="./resource/C_language_badge.png" title="Ceer" text="Know All The C Languages" {...prop}/>
             <div id="badge_text_container">
                 <p className="badge_text">Ceer</p>
                 <p className="badge_text">500 XP</p>
@@ -138,7 +138,7 @@ function LevelBadge(prop) {
     return (
         <div id={prop.mobile ? "m_levelbadge" : "levelbadge"}>
             <Level />
-            <Badge />
+            <Badge {...prop}/>
             <MessageGithubButton />
         </div>
     );

@@ -24,7 +24,7 @@ function useWindowSize() {
 
 export default function MainColumn() {
     let [width, height] = useWindowSize();
-    let mobile = width < WIDTH * 0.28;
+    let mobile = width < WIDTH * 0.28 || HEIGHT > WIDTH;
 
     let desktop_width = WIDTH * 0.35;
     if (width < WIDTH * COL_SIZE) {

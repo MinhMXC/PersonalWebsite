@@ -166,25 +166,26 @@
 #badge_container {
     background-color: rgba(0, 0, 0, 0.2);
     padding: 4%;
-    padding-bottom: 7%;
+    padding-bottom: 6%;
     margin-top: 5%;
     border-radius: 6px;
 }
 
 #badge_img {
     margin-right: 5%;
-    width: 21%;
 }
 
 #badge_text_container {
+    display: flex;
+    flex-flow: column;
     margin-left: 30%;
     width: 50%;
+    height: 100%;
 }
 
 .badge_text {
-    font-size: 16px;
     margin: 0;
-    padding-top: 4%;
+    padding-top: 5%;
 }
 
 #levelbadge {
@@ -193,7 +194,6 @@
 }
 
 #m_description {
-    margin-top: 5%;
     margin-left: 2%;
 }
 
@@ -209,9 +209,16 @@
     width: 48%;
 }
 
+#m_badge_container {
+    background-color: rgba(0, 0, 0, 0.2);
+    padding: 4%;
+    margin-top: 5%;
+    border-radius: 6px;
+    height: 11vw;
+}
+
 #m_levelbadge {
     width: 52%;
-    height: fit-content;
 }
 
 #avatar_levelbadge_container {
