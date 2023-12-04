@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/PersonalWebsite/static/css/main.c212f055.css",
-    "main.js": "/PersonalWebsite/static/js/main.ce42009c.js",
+    "main.css": "/PersonalWebsite/static/css/main.855fe2ca.css",
+    "main.js": "/PersonalWebsite/static/js/main.f7bf42c9.js",
     "static/js/787.0f15b36d.chunk.js": "/PersonalWebsite/static/js/787.0f15b36d.chunk.js",
     "static/media/calculator_map.zip": "/PersonalWebsite/static/media/calculator_map.32f6481800ac1813406f.zip",
     "static/media/steam_achievement.png": "/PersonalWebsite/static/media/steam_achievement.1512bb00b4a6748d05b4.png",
@@ -11,6 +11,7 @@
     "static/media/MotivaSansThin.ttf": "/PersonalWebsite/static/media/MotivaSansThin.d843c289bb62286d2729.ttf",
     "static/media/sql.png": "/PersonalWebsite/static/media/sql.a934ea4e20a19e2f2d4e.png",
     "static/media/python.png": "/PersonalWebsite/static/media/python.f9dc70303b81180b774d.png",
+    "static/media/java.png": "/PersonalWebsite/static/media/java.44b65100370243570faa.png",
     "static/media/css.png": "/PersonalWebsite/static/media/css.24f7008f9270d8e6d6bb.png",
     "static/media/C.png": "/PersonalWebsite/static/media/C.faa67b97f574421ee841.png",
     "static/media/C_language_badge.png": "/PersonalWebsite/static/media/C_language_badge.143a2171e612226f825d.png",
@@ -21,17 +22,16 @@
     "static/media/sg_flag.png": "/PersonalWebsite/static/media/sg_flag.bb0cdba77ee60115b53c.png",
     "static/media/react.png": "/PersonalWebsite/static/media/react.e71f4c5b0c4306d65355.png",
     "static/media/index.cjs": "/PersonalWebsite/static/media/index.671993152dc0f6e0b17a.cjs",
-    "static/media/java.png": "/PersonalWebsite/static/media/java.75517564ef1264ae04a4.png",
     "static/media/logo.svg": "/PersonalWebsite/static/media/logo.6ce24c58023cc2f8fd88.svg",
     "static/media/C++.svg": "/PersonalWebsite/static/media/C++.2441702dffa95ca3c92c.svg",
     "index.html": "/PersonalWebsite/index.html",
     "static/media/kotlin.svg": "/PersonalWebsite/static/media/kotlin.7f13d1fd42ec47e35224.svg",
-    "main.c212f055.css.map": "/PersonalWebsite/static/css/main.c212f055.css.map",
-    "main.ce42009c.js.map": "/PersonalWebsite/static/js/main.ce42009c.js.map",
+    "main.855fe2ca.css.map": "/PersonalWebsite/static/css/main.855fe2ca.css.map",
+    "main.f7bf42c9.js.map": "/PersonalWebsite/static/js/main.f7bf42c9.js.map",
     "787.0f15b36d.chunk.js.map": "/PersonalWebsite/static/js/787.0f15b36d.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.c212f055.css",
-    "static/js/main.ce42009c.js"
+    "static/css/main.855fe2ca.css",
+    "static/js/main.f7bf42c9.js"
   ]
 }
