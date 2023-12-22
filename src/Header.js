@@ -1,57 +1,18 @@
 import './css/header.css';
-import React, { useLayoutEffect, useState } from 'react';
+import React from 'react';
 import ImageHoverText from './HoverText';
-import cv from "./download/CV.docx"
+import cv from "./download/CV.docx";
+import avatar_image from "./resource/avatar.png"
+
 
 const WIDTH = window.screen.width;
 const HEIGHT = window.screen.height;
 
-function GetElementLocation(id) {
-    const [rec, setRec] = useState([0, 0, 0, 0])
-    useLayoutEffect(() => {
-        function updateRec() {
-            const frame = document.getElementById(id);
-            const rectangle = frame.getBoundingClientRect();
-            setRec([rectangle.left, rectangle.top, rectangle.right, rectangle.bottom])
-        }
-
-        window.addEventListener("resize", updateRec);
-        window.addEventListener("load", updateRec);
-        updateRec();
-        return () => {
-            window.removeEventListener("resize", updateRec);
-            window.removeEventListener("load", updateRec);
-        }
-    }, [id]);
-
-    return rec;
-}
-
 //AVATAR
-
-function Alias() {
-    return (
-        <div id="alias">
-            <text id="has_also">This programmer has also used:</text>
-            <br></br>
-            <text id="alias_name">MinhMXC</text>
-        </div>        
-    );
-}
-
 function AvatarPicture(prop) {
-    const img_w = prop.mobile ? prop.width / 3 : WIDTH / 18;
-    const frame_w = img_w * 1.2;
-    const avatar_pad = img_w * 0.1;
-    const id_main_container = prop.mobile ? "m_avatar_container" : "avatar_container";
-
-    let [left, top, right, bottom] = GetElementLocation("avatar_frame");
-    let [l, t, r, b] = GetElementLocation(id_main_container);
-
     return (
-        <div id={id_main_container}>
-            <img id="avatar_frame" src={require('./resource/avatar_frame.png')} alt="" width={frame_w} height={frame_w}></img>
-            <img src={require('./resource/avatar.png')} alt="" id="avatar_image" width={img_w} height={img_w} style={{top: top - t + avatar_pad, left: left - l + avatar_pad}}></img>
+        <div id={prop.mobile ? "m_avatar_container" : "avatar_container"}>
+            <img src={avatar_image} alt="avatar_image" id="avatar_image"></img>
         </div>
     );
 }
@@ -79,18 +40,10 @@ function Description(prop) {
 }
 
 function Info() {
-    const [isAliasShown, setAliasShown] = useState(false);
-
-    function toggleAlias() {
-        isAliasShown ? setAliasShown(false) : setAliasShown(true);
-    }
-
     return (
         <div id="info">
             <div id="name_container">
                 <p id="name">Nguyen Quang Minh</p>
-                <button type="button" onClick={toggleAlias} id="alias_button">▼</button>
-                {isAliasShown ? <Alias /> : null}
                 <Country />
                 <Description />
             </div>
@@ -104,7 +57,7 @@ function MessageGithubButton() {
     return (
         <div id="mg_container">
             <button className="header_button" id="message_button" type="button" onClick={() => window.location.href='https://mail.google.com/mail/u/0/?to=minhmxc.imp@gmail.com&fs=1&tf=cm'}>Message</button>
-            <div id="gmail" className="container">
+            <div id="gmail" className="container" style={{ padding: "1%", marginTop: "0.5%" }}>
                 <p className="text">Gmail: minhmxc.imp@gmail.com</p>
             </div>
             <button className="header_button" type="button" onClick={() => window.location.href='https://github.com/MinhMXC'}>Github</button>
@@ -162,12 +115,10 @@ function M_Header(prop) {
 
 function D_Header() {
     return (
-        <div className="header_container" style={{height: HEIGHT / 7}}>
-            <div className="header">
-                <AvatarPicture />
-                <Info />
-                <LevelBadge />
-            </div>
+        <div className="header_container" style={{height: HEIGHT / 8}}>
+            <AvatarPicture />
+            <Info />
+            <LevelBadge />
         </div>
     );
 }

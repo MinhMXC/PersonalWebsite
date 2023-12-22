@@ -1,5 +1,5 @@
 html {
-  background-color: rgb(50, 50, 50);
+  background-color: rgb(60, 60, 60);
 }
 
 #root {
@@ -10,6 +10,7 @@ html {
 .main_col {
   background-color: rgba(0, 0, 0, 0.3);
   margin: auto;
+  padding-bottom: 0.01%;
 }
 
 #body {

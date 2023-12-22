@@ -55,7 +55,7 @@
 .p_title {
     font-size: 130%;
     margin-top: 1%;
-    margin-bottom: 0%;
+    margin-bottom: 0;
 }
 
 .p_desc {
@@ -64,7 +64,7 @@
 }
 
 .showcase_container {
-    margin: 1%;
+    margin: 0 1% 2% 1%;
     background-color: rgba(0, 0, 0, 0.2);
     border-radius: 6px;
     overflow: hidden;
@@ -84,8 +84,7 @@
 }
 
 .s_title {
-    margin: 1%;
-    margin-left: 1.5%;
+    margin: 1% 1% 1% 1.5%;
     font-size: 140%;
     font-family: Motiva Sans, sans-serif;
 }
