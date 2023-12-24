@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/PersonalWebsite/static/css/main.d69912b6.css",
-    "main.js": "/PersonalWebsite/static/js/main.7bf672cb.js",
+    "main.css": "/PersonalWebsite/static/css/main.0e586a4f.css",
+    "main.js": "/PersonalWebsite/static/js/main.e9b032cb.js",
     "static/js/787.0f15b36d.chunk.js": "/PersonalWebsite/static/js/787.0f15b36d.chunk.js",
     "static/media/calculator_map.zip": "/PersonalWebsite/static/media/calculator_map.32f6481800ac1813406f.zip",
     "static/media/steam_achievement.png": "/PersonalWebsite/static/media/steam_achievement.1512bb00b4a6748d05b4.png",
@@ -26,12 +26,12 @@
     "static/media/C++.svg": "/PersonalWebsite/static/media/C++.2441702dffa95ca3c92c.svg",
     "index.html": "/PersonalWebsite/index.html",
     "static/media/kotlin.svg": "/PersonalWebsite/static/media/kotlin.7f13d1fd42ec47e35224.svg",
-    "main.d69912b6.css.map": "/PersonalWebsite/static/css/main.d69912b6.css.map",
-    "main.7bf672cb.js.map": "/PersonalWebsite/static/js/main.7bf672cb.js.map",
+    "main.0e586a4f.css.map": "/PersonalWebsite/static/css/main.0e586a4f.css.map",
+    "main.e9b032cb.js.map": "/PersonalWebsite/static/js/main.e9b032cb.js.map",
     "787.0f15b36d.chunk.js.map": "/PersonalWebsite/static/js/787.0f15b36d.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.d69912b6.css",
-    "static/js/main.7bf672cb.js"
+    "static/css/main.0e586a4f.css",
+    "static/js/main.e9b032cb.js"
   ]
 }
