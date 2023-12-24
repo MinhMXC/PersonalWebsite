@@ -7,7 +7,7 @@ import LangShowcase from './LanguageShowcase.js';
 
 const WIDTH = window.screen.width;
 const HEIGHT = window.screen.height;
-const COL_SIZE = 0.35;
+const COL_SIZE = 0.40;
 
 function useWindowSize() {
     const [size, setSize] = useState([0, 0]);
@@ -26,7 +26,7 @@ export default function MainColumn() {
     let [width, height] = useWindowSize();
     let mobile = width < WIDTH * 0.28 || HEIGHT > WIDTH;
 
-    let desktop_width = WIDTH * 0.35;
+    let desktop_width = WIDTH * COL_SIZE;
     if (width < WIDTH * COL_SIZE) {
         desktop_width = width
     }

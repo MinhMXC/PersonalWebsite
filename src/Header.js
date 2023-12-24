@@ -76,10 +76,11 @@ function Level() {
 }
 
 function Badge(prop) {
+    const textMargin = prop.mobile ? window.innerWidth / 7.5 : window.screen.width / 42;
     return (
         <div id={prop.mobile ? "m_badge_container" : "badge_container"}>
             <ImageHoverText src="./resource/C_language_badge.png" title="Ceer" text="Know All The C Languages" {...prop}/>
-            <div id="badge_text_container">
+            <div id="badge_text_container" style={{ marginLeft: textMargin }}>
                 <p className="badge_text">Ceer</p>
                 <p className="badge_text">500 XP</p>
             </div>

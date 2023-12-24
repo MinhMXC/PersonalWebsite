@@ -1,7 +1,7 @@
 import './css/langshowcase.css'
 import './css/projectshowcase.css'
 import ImageHoverText from './HoverText';
-import React, { useLayoutEffect, useState } from 'react';
+import React from 'react';
 
 function Achievement(prop) {
     return (
