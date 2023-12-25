@@ -15,12 +15,14 @@
 
 .container {
     display: none;
+    position: relative;
     border-radius: 6px;
     background-color: rgb(194, 194, 194);
     animation: fadeIn 200ms;
     padding: 4%;
     width: max-content;
     box-shadow: 0 0 2px black;
+    z-index: 999;
 }
 
 .text {

@@ -33,8 +33,8 @@ function Country(prop) {
 function Description(prop) {
     return (
         <div id={prop.mobile ? "m_description" : "description"}>
-            <p>Hello, I'm currently a Year 1 Computer Science student at the National University of Singapore.</p>
-            <p>Welcome to my website \ (•◡•) /.</p>
+            <p className="description-text">Hello, I'm currently a Year 1 Computer Science student at the National University of Singapore.</p>
+            <p className="description-text">Welcome to my website \ (•◡•) /.</p>
         </div>
     );
 }

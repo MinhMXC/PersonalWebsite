@@ -50,7 +50,8 @@ export default function ProjectShowcase(prop) {
             <div className="title_container">
                 <p className="s_title">Personal Projects Showcase</p>
             </div>
-            <div className="showcase_body_container" style={{display: prop.mobile ? "block" : "flex"}}>
+            <div className="showcase_body_container"
+                 style={{display: prop.mobile ? "block" : "flex", marginRight: prop.mobile ? "1%" : "0"}}>
                 <Project1 {...prop}/>
                 <Project2 {...prop}/>
             </div>
