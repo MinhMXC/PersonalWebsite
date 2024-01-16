@@ -1,9 +1,10 @@
 {
   "files": {
     "main.css": "/PersonalWebsite/static/css/main.86f9be2c.css",
-    "main.js": "/PersonalWebsite/static/js/main.80fe2b4e.js",
+    "main.js": "/PersonalWebsite/static/js/main.2a613d89.js",
     "static/js/787.0f15b36d.chunk.js": "/PersonalWebsite/static/js/787.0f15b36d.chunk.js",
     "static/media/calculator_map.zip": "/PersonalWebsite/static/media/calculator_map.32f6481800ac1813406f.zip",
+    "static/media/anarchy_forum.png": "/PersonalWebsite/static/media/anarchy_forum.17a3ebe2ef245ebf623d.png",
     "static/media/steam_achievement.png": "/PersonalWebsite/static/media/steam_achievement.1512bb00b4a6748d05b4.png",
     "static/media/avatar_frame.png": "/PersonalWebsite/static/media/avatar_frame.e745f59ce02abdfb2c02.png",
     "static/media/background.png": "/PersonalWebsite/static/media/background.6f98c9240e8a2750d1c2.png",
@@ -27,11 +28,11 @@
     "index.html": "/PersonalWebsite/index.html",
     "static/media/kotlin.svg": "/PersonalWebsite/static/media/kotlin.7f13d1fd42ec47e35224.svg",
     "main.86f9be2c.css.map": "/PersonalWebsite/static/css/main.86f9be2c.css.map",
-    "main.80fe2b4e.js.map": "/PersonalWebsite/static/js/main.80fe2b4e.js.map",
+    "main.2a613d89.js.map": "/PersonalWebsite/static/js/main.2a613d89.js.map",
     "787.0f15b36d.chunk.js.map": "/PersonalWebsite/static/js/787.0f15b36d.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.86f9be2c.css",
-    "static/js/main.80fe2b4e.js"
+    "static/js/main.2a613d89.js"
   ]
 }
