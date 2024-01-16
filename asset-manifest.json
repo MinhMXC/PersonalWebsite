@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/PersonalWebsite/static/css/main.86f9be2c.css",
-    "main.js": "/PersonalWebsite/static/js/main.2a613d89.js",
+    "main.js": "/PersonalWebsite/static/js/main.c3519d5f.js",
     "static/js/787.0f15b36d.chunk.js": "/PersonalWebsite/static/js/787.0f15b36d.chunk.js",
     "static/media/calculator_map.zip": "/PersonalWebsite/static/media/calculator_map.32f6481800ac1813406f.zip",
     "static/media/anarchy_forum.png": "/PersonalWebsite/static/media/anarchy_forum.17a3ebe2ef245ebf623d.png",
@@ -18,7 +18,7 @@
     "static/media/C_language_badge.png": "/PersonalWebsite/static/media/C_language_badge.143a2171e612226f825d.png",
     "static/media/jetpack_compose.png": "/PersonalWebsite/static/media/jetpack_compose.43f87ad85bca41f510f1.png",
     "static/media/html5.png": "/PersonalWebsite/static/media/html5.d6eb25bfe55c2ae39afe.png",
-    "static/media/CV.docx": "/PersonalWebsite/static/media/CV.81d2083b547e4bc002d5.docx",
+    "static/media/CV.docx": "/PersonalWebsite/static/media/CV.441d15cb3368ec327474.docx",
     "static/media/js.png": "/PersonalWebsite/static/media/js.bcc2c22a39cd931b0284.png",
     "static/media/sg_flag.png": "/PersonalWebsite/static/media/sg_flag.bb0cdba77ee60115b53c.png",
     "static/media/react.png": "/PersonalWebsite/static/media/react.e71f4c5b0c4306d65355.png",
@@ -28,11 +28,11 @@
     "index.html": "/PersonalWebsite/index.html",
     "static/media/kotlin.svg": "/PersonalWebsite/static/media/kotlin.7f13d1fd42ec47e35224.svg",
     "main.86f9be2c.css.map": "/PersonalWebsite/static/css/main.86f9be2c.css.map",
-    "main.2a613d89.js.map": "/PersonalWebsite/static/js/main.2a613d89.js.map",
+    "main.c3519d5f.js.map": "/PersonalWebsite/static/js/main.c3519d5f.js.map",
     "787.0f15b36d.chunk.js.map": "/PersonalWebsite/static/js/787.0f15b36d.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.86f9be2c.css",
-    "static/js/main.2a613d89.js"
+    "static/js/main.c3519d5f.js"
   ]
 }
